@@ -5,7 +5,7 @@ from PIL import Image
 import io
 import pandas as pd
 
-model = torch.hub.load('./yolov5','custom',path = 'cocotree.pt',source ='local', force_reload =True)
+model = torch.hub.load('yolov5','custom',path = 'cocotree.pt',source ='local', force_reload =True)
 
 st.title('Damaged Tree Detection')
 st.write('Take a picture to predict the model')
