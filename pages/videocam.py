@@ -11,7 +11,7 @@ st.write('Please check the checkbox present in the sidebar to turn on your cam a
 model = torch.hub.load('./yolov5','custom',path = 'cocotree.pt',source ='local', force_reload =True)
 
 FRAME_WINDOW = st.image([])
-camera = cv2.VideoCapture(-1)
+camera = cv2.VideoCapture(1)
 run = st.sidebar.checkbox('Run')
 cur_frame=0
 frame_skip=40
